@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Cambo&display=swap');
+
+* {
+    font-family: "Cambo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #fdfdfd !important;
+    color: #131183;
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    list-style-type: none;
+    padding: 5em;
+    display: inline-block;
+    width: 5%;
+}

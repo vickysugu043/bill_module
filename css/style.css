@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Cambo&display=swap');
+
+* {
+    font-family: "Cambo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #c9c0c0 !important;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Freehand471 BT';
+    src: url('../assets/UFONTS.COM_FREEHAND-471-BT.TTF') format('truetype');
+}
+
+.sktmlogo {
+    width: 5%;
+    margin-left: 19em !important;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+th {
+    background-color: #1c1565 !important;
+    color: #fff !important;
+}
+
+label {
+    text-transform: uppercase !important;
+}
+
+.fa-user {
+    color: #1c1565;
+}
+
+.navbar {
+    left: -20px;
+}
+
+.user-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.user-dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 2.5em;
+    /* below the button */
+    left: -30px;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    padding: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    border-radius: 4px;
+}
+
+.user-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* .navbar-toggler:hover {
+    background-color: #000b41 !important;
+    border-radius: 4px;
+}
+
+span.navbar-toggler-icon:hover{
+    color: #fff !important;
+} */
+
+/* @media (max-width: 768px) {
+    .sktmlogo {
+        width: 15%;
+        margin-left: 8em !important;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    #qr-reader {
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 auto !important;
+    }
+} */
+
+@media (max-width: 478px) {
+    .sktmlogo {
+        position: absolute !important;
+        width: 10% !important;
+        display: block !important;
+        margin-left: 0 !important;
+        top: 58px;
+    }
+
+    .navbar {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: .5rem;
+        margin-right: -1.6em !important;
+        padding-bottom: .5rem;
+    }
+
+    h2 {
+        font-size: 1.1em !important;
+        margin-top: 20px !important;
+        margin-left: 1em !important;
+    }
+
+    .modal {
+        top: 40% !important;
+        height: 41.7% !important;
+    }
+
+    #qr-reader {
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 auto !important;
+    }
+
+    .text-end {
+        text-align: center !important;
+    }
+
+    form {
+        margin-top: 10%;
+    }
+
+    .btn {
+        width: 30% !important;
+        margin: 0 auto !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h2 {
+        font-size: 1rem;
+        /* Small font for very narrow screens */
+    }
+
+    .sktmlogo {
+        margin-bottom: 0.5rem;
+        /* Adjust spacing for tight screens */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .sktmlogo {
+        width: 10%;
+        margin-left: 0em !important;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    h2 {
+        margin-top: 1em !important;
+        left: 2em;
+    }
+
+    form {
+        margin-top: 3em;
+    }
+
+    #qr-reader {
+        width: 50% !important;
+        height: 50% !important;
+        margin: 0 auto !important;
+    }
+
+    .btn {
+        text-align: center !important;
+        width: 30% !important;
+    }
+
+    #qrScannerModal {
+        width: 100% !important;
+        height: 100% !important;
+        margin-top: -5em !important;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .col-md-3,
+    .col-md-2 {
+        width: 100vw;
+    }
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.custom-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.end-box-button {
+    flex-shrink: 0;
+    /* Prevent button from shrinking */
+}
+
+
+.modal {
+    top: 20% !important;
+    height: 41.7% !important;
+}
+
+.d-flex {
+    float: right;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+h2 {
+    font-family: 'Freehand471 BT', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #1c1565;
+}
+
+.custom-input-wrapper {
+    position: relative;
+}
+
+.custom-input-wrapper input.form-control {
+    padding-right: 30px;
+    /* background-color: #ddd; */
+    border: 1px solid #000;
+    /* height: 30px; */
+    border-radius: 5px;
+}
+
+.end-box-button {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 26px;
+    height: 65%;
+    background-color: #000b41;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.estno .end-box-button {
+    top: 6px;
+}
+
+.popup-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    border: 2px solid #000b41;
+    padding: 15px;
+    z-index: 1050;
+    display: none;
+    border-radius: 6px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    min-width: 300px;
+    max-width: 400px;
+}
+
+.popup-box table tbody tr {
+    cursor: pointer;
+}
+
+.popup-box table tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+td {
+    cursor: pointer;
+}
+
+.select2,
+#barcode_scane {
+    cursor: pointer;
+}
